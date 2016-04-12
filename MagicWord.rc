@@ -1,0 +1,379 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MagicWord.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 219, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 哈哈背单词"
+FONT 10, "宋体"
+BEGIN
+    ICON            127,IDC_STATIC,13,35,20,20
+    LTEXT           "哈哈背单词 1.0 版",IDC_STATIC,44,16,77,8
+    LTEXT           "UP主：李汝涛 李永刚 唐诗亮 梁哲喆",IDC_STATIC,44,33,136,
+                    8
+    LTEXT           "本软件由Bilibili赞助并提供支持",IDC_STATIC,44,51,115,8
+    LTEXT           "哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯",IDC_STATIC,44,
+                    69,148,8
+END
+
+IDD_MAGICWORD_DIALOG DIALOGEX 0, 0, 321, 200
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "哈哈背单词"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_GOTO,203,178,40,12,ES_AUTOHSCROLL
+    CTEXT           "Current Word",IDC_STATIC_WORD,150,39,78,8
+    EDITTEXT        IDC_EDIT_EXPLAIN,83,49,224,43,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SENTENCE,83,97,224,61,ES_MULTILINE | 
+                    ES_READONLY | NOT WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,8,4,68,188,BS_FLAT
+    GROUPBOX        "",IDC_STATIC,80,30,236,141,BS_FLAT
+    GROUPBOX        "",IDC_STATIC,80,168,236,24,BS_FLAT
+    LTEXT           "Welcome",IDC_STATIC_JUMP,104,178,60,8
+    PUSHBUTTON      "开始学习",IDC_STUDY,114,14,60,14
+    PUSHBUTTON      "暂停学习",IDC_KILLSTUDY,203,14,60,14
+    PUSHBUTTON      "界面",IDC_JIEMIAN,12,113,60,14
+    PUSHBUTTON      "词典",IDC_CIDIAN,12,14,60,14
+    PUSHBUTTON      "添加",IDC_TIANJIA,12,33,60,14
+    PUSHBUTTON      "删除",IDC_SHANCHU,12,53,60,14
+    PUSHBUTTON      "搜索",IDC_SOUSUO,12,94,60,14
+    PUSHBUTTON      "修改",IDC_XIUGAI,12,74,60,14
+    PUSHBUTTON      "关于",IDC_GUANYU,12,132,60,14
+    PUSHBUTTON      "退出",IDC_TUICHU,12,176,60,14
+    PUSHBUTTON      "Ψ",IDC_LISHI,84,176,16,14
+    PUSHBUTTON      "Go",IDC_TIAO,186,176,17,14
+    PUSHBUTTON      "△",IDC_ZUIQIAN,243,176,15,14
+    PUSHBUTTON      "←",IDC_SHANGYI,261,176,17,14
+    PUSHBUTTON      "→",IDC_XIAYI,280,176,16,14
+    PUSHBUTTON      "▽",IDC_ZUIHOU,299,176,15,14
+END
+
+IDD_WORDINFO_DIALOG DIALOG DISCARDABLE  0, 0, 237, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "单词信息"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_WORD,82,5,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPLAIN0,28,34,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPLAIN1,28,48,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPLAIN2,28,62,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHRASE0,28,104,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHRASE1,28,118,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHRASE2,28,132,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SENTENCE0,28,174,196,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SENTENCE1,28,188,196,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,40,218,50,14
+    PUSHBUTTON      "取消",IDCANCEL,146,218,50,14
+    LTEXT           "单词",IDC_STATIC,60,9,17,8
+    GROUPBOX        "解释",IDC_STATIC,8,21,224,64
+    LTEXT           "1:",IDC_STATIC,16,37,9,8
+    LTEXT           "2:",IDC_STATIC,16,51,9,8
+    LTEXT           "3:",IDC_STATIC,16,65,9,8
+    GROUPBOX        "短语",IDC_STATIC,8,91,224,64
+    LTEXT           "1:",IDC_STATIC,16,107,9,8
+    LTEXT           "2:",IDC_STATIC,16,121,9,8
+    LTEXT           "3:",IDC_STATIC,16,135,9,8
+    GROUPBOX        "例句",IDC_STATIC,8,161,224,49
+    LTEXT           "1:",IDC_STATIC,16,177,9,8
+    LTEXT           "2:",IDC_STATIC,16,191,9,8
+END
+
+IDD_SEARCH_DIALOG DIALOGEX 0, 0, 149, 41
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "查找单词"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WORD,8,20,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Google",IDOK,92,20,50,14
+    LTEXT           "快输入要查找的单词：",IDC_STATIC,8,8,81,8
+END
+
+IDD_LISTITEM_DIALOG DIALOGEX 0, 0, 195, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "列举显示包含共用串单词集"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WORD,137,7,26,12
+    PUSHBUTTON      "Go!",IDC_GO,165,7,23,12,BS_RIGHT,WS_EX_CLIENTEDGE
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,2,5,78,171
+    EDITTEXT        IDC_DISPLAY,84,26,108,149,ES_MULTILINE | ES_READONLY
+    CONTROL         "区分大小写",IDC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,87,8,48,10
+    GROUPBOX        "",IDC_STATIC,84,0,108,22,BS_FLAT
+END
+
+IDD_TIMER_DIALOG DIALOG DISCARDABLE  0, 0, 178, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "计时器"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_nTimeInterval,64,21,40,12,ES_NUMBER
+    LTEXT           "间隔时间(秒)",IDC_STATIC,12,25,49,8
+    CONTROL         "显示下一个单词",IDC_WAY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,43,72,10
+    CONTROL         "显示上一个单词",IDC_WAY1,"Button",BS_AUTORADIOBUTTON,12,
+                    62,72,10
+    CONTROL         "千万别点我！::>_<::",IDC_WAY2,"Button",
+                    BS_AUTORADIOBUTTON,83,52,86,10
+    LTEXT           "启动计时器以自动浏览",IDC_STATIC,12,7,81,8
+    PUSHBUTTON      "确定",IDC_QUEDING,27,78,37,14
+    PUSHBUTTON      "取消",IDC_QUXIAO,82,78,34,14
+END
+
+IDD_STYLE_DIADLG DIALOG DISCARDABLE  0, 0, 155, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "界面风格"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,66,38,12
+    PUSHBUTTON      "取消",IDCANCEL,82,65,43,12
+    CONTROL         "淡灰色",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,28,14,40,10
+    CONTROL         "天蓝色",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,28,30,40,
+                    10
+    CONTROL         "浅绿色",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,28,47,40,
+                    10
+    CONTROL         "庄紫色",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,87,14,40,
+                    10
+    CONTROL         "咖啡色",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,87,30,40,
+                    10
+    CONTROL         "夜黑色",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,87,47,40,
+                    10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MagicWord Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MagicWord\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MagicWord.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MagicWord 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        VERTGUIDE, 44
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MAGICWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        VERTGUIDE, 12
+        VERTGUIDE, 72
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+        HORZGUIDE, 28
+        HORZGUIDE, 46
+        HORZGUIDE, 67
+        HORZGUIDE, 88
+        HORZGUIDE, 108
+        HORZGUIDE, 127
+        HORZGUIDE, 146
+        HORZGUIDE, 190
+    END
+
+    IDD_WORDINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_SEARCH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_LISTITEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_TIMER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        VERTGUIDE, 12
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_STYLE_DIADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        VERTGUIDE, 28
+        VERTGUIDE, 87
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 81
+        HORZGUIDE, 24
+        HORZGUIDE, 40
+        HORZGUIDE, 57
+        HORZGUIDE, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 哈哈背单词"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MagicWord.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,3 +1,8 @@
+
+/**
+ * Created by lrtwjhs on 2018/6/22.
+ */
+
 public class Solution {
 	public int removeDuplicates(int[] A) {
 	    if (A.length == 0) return 0;

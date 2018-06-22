@@ -1,20 +1,25 @@
+
+/**
+ * Created by lrtwjhs on 2018/6/22.
+ */
+
 public class Solution {
-    public int[] twoSum(int[] numbers, int target) {
+    public int[] twoSum(int[] nums, int target) {
 
-        HashMap<Integer, Integer> m = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
-        for(int i = 0; i < numbers.length; i++){
-            m.put(target - numbers[i], i);
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
         }
 
-        for(int i = 0; i < numbers.length; i++){
+        for (int i = 0; i < nums.length; i++) {
 
-            Integer v = m.get(numbers[i]);
+            Integer v = map.get(target - nums[i]);
 
-            if(v != null && v != i){
-                return new int[]{i + 1, v + 1};
+            if (v != null && v != i) {
+                return new int[]{i, v};
+            }
         }
-
-        throw new RuntimeException();
+        return null;
     }
 }

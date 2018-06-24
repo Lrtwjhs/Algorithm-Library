@@ -24,7 +24,7 @@ public class Solution {
         ListNode rest;
         if (l1 == null) rest = l2; else rest = l1;
 
-        while(rest != null) {
+        while (rest != null) {
         	r.val += rest.val;
 
         	r.next = new ListNode(r.val / 10);

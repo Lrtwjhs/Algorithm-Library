@@ -13,7 +13,7 @@ class Solution {
         for (int j = 0; j < strs[0].length(); j++) {
             char c = strs[0].charAt(j);
             for (int i = 1; i < strs.length; i++) {
-                if (j >= strs[i].length() || strs[i].charAt(j) != c) {
+                if (j >= strs[i].length() || c != strs[i].charAt(j)) {
                     return sb.toString();
                 }
             }

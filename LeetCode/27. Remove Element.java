@@ -1,6 +1,8 @@
 
 /**
  * Created by lrtwjhs on 2018/6/22.
+ *
+ * https://leetcode.com/problems/remove-element/
  */
 
 public class Solution {

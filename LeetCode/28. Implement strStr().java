@@ -1,6 +1,8 @@
 
 /**
  * Created by lrtwjhs on 2018/6/25.
+ *
+ * https://leetcode.com/problems/implement-strstr/
  */
 
 class Solution {
